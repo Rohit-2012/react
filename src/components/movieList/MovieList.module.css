@@ -1,0 +1,35 @@
+.movie_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.movie_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(225, 240, 239);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 5px rgb(110, 110, 110);
+}
+
+.movie_card img {
+    width: 100%;
+    height: 80%;
+}
+
+@media (max-width: 400px) {
+    .movie_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.loader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
