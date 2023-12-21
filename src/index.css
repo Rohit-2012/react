@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #123;
+  font-family: "Raleway", sans-serif;
+}
+.card_container {
+  background-color: #020202;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.card_container img {
+  width: 13rem;
+  transition: transform ease-in-out 1s, box-shadow ease-in-out 1s;
+}
+.card_container img:hover {
+  box-shadow: 4px 5px 5px rgb(116, 116, 116);
+  transform: translate(-5px, -5px);
+}
+.name {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.role {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+
+section {
+  width: 25rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+ .links{
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+i:hover {
+  color: #123;
+}
