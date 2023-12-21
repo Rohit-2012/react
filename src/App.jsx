@@ -9,10 +9,8 @@ function App() {
       <section className="about">
         <h4>About:</h4>
         <p>
-          {" "}
           I'm Rohit, a passionate learner on the path to becoming a skilled
-          Frontend Developer. I'm thriving as a Frontend Developer trainee and
-          Teaching Assistant at FunctionUp since Feb 2023.
+          Web Developer.  I bring a strong foundation in React.js, HTML, CSS, and JavaScript. My proficiency in React.js allows me to build interactive and dynamic user interfaces with ease.
         </p>
       </section>
       <section className="contact">
