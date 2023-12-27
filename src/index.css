@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+ height: 100%;
+ width: 100%;
+ background: #e0dedb;
+}
+
+main{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   padding: 1rem;
+}
+
+main h1{
+   font-size: 56px;
+   color: #333;
+}
+
+.list--container {
+   background: #084277;
+   padding: 1rem;
+   border-radius: 0.4rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   box-shadow: 2px 2px 4px 1px rgb(85, 85, 85);
+   justify-content: center;
+   align-items: center;
+}
+
+.input--box{
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.input--box input {
+   height: 2rem;
+   border: none;
+   padding: 0 0.5rem;
+   font-size: 1.2rem;
+   border-radius: 0.3rem;
+}
+
+.input--box button {
+   padding: 0.2rem 1rem;
+   font-size: 1.2rem;
+   border: none;
+   border-radius: 0.3rem;
+   cursor: pointer;
+   color: #fff;
+   background: rgb(8, 165, 2);
+}
+
+.info {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+   font-size: 1.2rem;
+}
+
+ul {
+   width: 100%;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   height: 25rem;
+   overflow: scroll;
+}
+ul::-webkit-scrollbar {
+   display: none;
+}
+
+ul li {
+   border-radius: 0.3rem;
+   padding: 0.5rem 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #333;
+   color: #fff;
+   box-shadow: 2px 2px 3px rgb(43, 43, 43);
+}
+li span {
+   width: 80%;
+   word-wrap: break-word;
+}
+
+.completed {
+   background-color: rgb(4, 156, 42);
+}
+
+.buttons--container {
+   display: flex;
+   gap: 0.4rem;
+   align-items: center;
+}
+
+.buttons--container button {
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+   .list--container {
+      width: 95%;
+   }
+   .input--box {
+      flex-direction: column;
+      gap: 0.2rem;
+   }
+}
