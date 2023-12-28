@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+header {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow: 0px 2px 4px #333;
+}
+
+header img {
+  width: 35px;
+}
+
+.user-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-auto-flow: 1;
+  padding: 2rem 1rem;
+  width: 60%;
+  margin: auto;
+}
+
+.user-inputs button {
+  grid-column: 1 / -1;
+  height: 2rem;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.user-inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-inputs div input {
+  height: 2rem;
+  width: 100%;
+  padding: 0 0.4rem;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 0.3rem;
+}
+
+.meme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.top-caption {
+  color: #fff;
+  position: absolute;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px black;
+  top: 0.6rem;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-caption {
+  color: #fff;
+  position: absolute;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px black;
+  bottom: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.meme-container img {
+  width: 100%;
+}
+
+@media (max-width:500px) {
+   .user-inputs {
+      width: 100%;
+   }
+
+   .meme-container {
+      width: 100%;
+      padding: 0.2rem;
+   }
+}
